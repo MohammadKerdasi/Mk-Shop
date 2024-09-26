@@ -30,7 +30,7 @@ const Header = () => {
         } fixed py-2 w-full z-10 transition-all`}
       >
         <div className="container mx-auto flex items-center justify-between h-full">
-          <Link to={"/"}>
+          <Link to={"/home"}>
             <div>
               <img className="w-[40px]" src={Logo} alt="" />
             </div>
