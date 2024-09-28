@@ -35,7 +35,7 @@ const Sidebar = () => {
       </div>
       
       {/* Cart items container with height and overflow */}
-      <div className="flex flex-col gap-y-2 h-[400px] lg:h-[400px] overflow-y-auto overflow-x-hidden mt-2">
+      <div className="flex flex-col gap-y-2 h-[500px] lg:h-[500px] overflow-y-auto overflow-x-hidden mt-2">
         {cart.map((item) => {
           return <CartItem item={item} key={item.id} />;
         })}
@@ -52,14 +52,6 @@ const Sidebar = () => {
             <FiTrash2 className="hover:scale-100"/>
           </div>
         </div>
-
-        {/* View Cart and Checkout Buttons */}
-        <Link to='/' className="bg-gray-200 flex p-4 justify-center items-center text-primary w-full font-medium">
-          View Cart
-        </Link>
-        <Link to='/' className="bg-gray-500 flex p-4 justify-center items-center text-white w-full font-medium">
-          Checkout
-        </Link>
       </div>
     </div>
   );
